@@ -1,0 +1,23 @@
+with S-expression:
+
+(main
+  (let ((num (add 1 2)))
+    num))
+
+(@print
+  (let ((log (log num)))
+    log))
+_____________________________
+
+with AST:
+
+; there is no need for standard lib because we want to reach all hardware components in ease like assembly
+
+main
+  add 1 2
+  num add
+return num
+
+@print
+  log num
+return log
