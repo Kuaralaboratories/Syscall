@@ -17,7 +17,7 @@ Syscall is a high-level, cross-platform programming language designed with the s
 ; Example program in Syscall
 main
     add 1 2         ; Perform addition
-    num add
+    num add         ; assigning add functions result to num named variable
 return num          ; Return the result
 
 @print
