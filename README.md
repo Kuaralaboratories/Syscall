@@ -20,10 +20,8 @@ Syscall is a high-level, cross-platform programming language designed with the s
 main
     add 1 2         ; Perform addition
     num add         ; assigning add functions result to num named variable
-return num          ; Return the result
-
-@print
-    log num         ; Ready to print the result
+    @print
+        log num     ; Ready to print the result
 return log          ; Return log call for printing
 ```
 ## Getting Started
