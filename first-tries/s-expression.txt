@@ -2,11 +2,9 @@ with S-expression:
 
 (main
   (let ((num (add 1 2)))
-    num))
-
-(@print
-  (let ((log (log num)))
-    log))
+    (@print
+      (let ((log (log num)))
+        log))))
 _____________________________
 
 with AST:
@@ -16,8 +14,6 @@ with AST:
 main
   add 1 2
   num add
-return num
-
-@print
-  log num
+  @print
+    log num
 return log
