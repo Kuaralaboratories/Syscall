@@ -1,35 +1,34 @@
 # ast.py
 
-class Node:
-    pass
-
-class Program(Node):
+class Program:
     def __init__(self, body):
         self.body = body
 
-class Let(Node):
+class Let:
     def __init__(self, variable, expression):
         self.variable = variable
         self.expression = expression
 
-class Add(Node):
+class Add:
     def __init__(self, left, right):
         self.left = left
         self.right = right
 
-class Variable(Node):
+class Variable:
     def __init__(self, name):
         self.name = name
 
-class Number(Node):
+class Number:
     def __init__(self, value):
         self.value = value
 
-class FunctionCall(Node):
+class FunctionDef:
+    def __init__(self, name, params, body):
+        self.name = name
+        self.params = params
+        self.body = body
+
+class FunctionCall:
     def __init__(self, name, args):
         self.name = name
         self.args = args
-
-class Print(Node):
-    def __init__(self, expression):
-        self.expression = expression

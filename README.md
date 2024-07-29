@@ -2,6 +2,8 @@
 
 Syscall is a high-level, cross-platform programming language designed with the spirit of assembly language for experimental purposes.
 
+![Syscall Logo](images/Syscall.svg)
+
 ## Features
 
 - **Assembly-like Syntax:** Syscall provides a syntax that resembles traditional assembly languages, making it suitable for low-level programming enthusiasts.
@@ -17,11 +19,9 @@ Syscall is a high-level, cross-platform programming language designed with the s
 ; Example program in Syscall
 main
     add 1 2         ; Perform addition
-    num add
-return num          ; Return the result
-
-@print
-    log num         ; Ready to print the result
+    num add         ; assigning add functions result to num named variable
+    @print
+        log num     ; Ready to print the result
 return log          ; Return log call for printing
 ```
 ## Getting Started
